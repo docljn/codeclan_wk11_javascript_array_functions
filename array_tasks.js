@@ -29,9 +29,15 @@ const arrayTasks = {
     return newArray;
   },
 
-  // findIndexesOf: function (arr, itemToFind) {
-
-  // },
+  findIndexesOf: function (arr, itemToFind) {
+    const newArray = [];
+    arr.forEach( function (number, index) {
+      if (number === itemToFind){
+        newArray.push(index);
+      }
+    });
+    return newArray;
+  },
 
   // sumOfAllEvenNumbersSquared: function (arr) {
 

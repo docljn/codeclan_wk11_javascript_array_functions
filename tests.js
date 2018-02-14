@@ -33,7 +33,7 @@ describe("Array tasks", function () {
     assert.deepStrictEqual(arrayTasks.removeAndClone(arr, 1), [2, 3, 4, 5]);
   });
 
-  xit("should find all occurences of a value, returning an array of index positions", function () {
+  it("should find all occurences of a value, returning an array of index positions", function () {
     const arr = [1, 2, 1, 3, 4, 1, 5];
     assert.deepStrictEqual(arrayTasks.findIndexesOf(arr, 1), [0, 2, 5]);
   });
