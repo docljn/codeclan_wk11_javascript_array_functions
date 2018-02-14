@@ -48,10 +48,16 @@ const arrayTasks = {
 
   // ----------- EXTENSION ------------
 
-  // findDuplicates: function (arr) {
-
-  // },
-
+  findDuplicates: function (arr) {
+    const duplicates = [];
+    for (let i = 0; i < arr.length-1; i++) {
+      const comparison = arr[i];
+      if (arr.includes(comparison, i+1) && !duplicates.includes(comparison)) {
+        duplicates.push(comparison);
+      }
+    }
+    return duplicates;
+  },
 };
 
 module.exports = arrayTasks;
