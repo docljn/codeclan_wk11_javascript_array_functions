@@ -22,9 +22,12 @@ const arrayTasks = {
     }, 0);
   },
 
-  // removeAndClone: function (arr, valueToRemove) {
-
-  // },
+  removeAndClone: function (arr, valueToRemove) {
+    const newArray = arr.filter( function (number) {
+      return number !== valueToRemove;
+    });
+    return newArray;
+  },
 
   // findIndexesOf: function (arr, itemToFind) {
 
