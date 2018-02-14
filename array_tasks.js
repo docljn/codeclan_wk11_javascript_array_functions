@@ -39,9 +39,12 @@ const arrayTasks = {
     return newArray;
   },
 
-  // sumOfAllEvenNumbersSquared: function (arr) {
+  sumOfAllEvenNumbersSquared: function (arr) {
 
-  // }
+    return this.sum(this.square(arr.filter( function (number) {
+      return number % 2 === 0;
+    })));
+  },
 
   // ----------- EXTENSION ------------
 
